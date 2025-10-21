@@ -19,7 +19,7 @@ const Hero = () => {
 
           <div className="order-1 md:order-2 flex justify-center">
             <img 
-              src="https://i.imgur.com/nYk4nye.png" 
+              src="https://i.imgur.com/xbf6XeF.png" 
               alt="Julia Mello"
               className="w-full max-w-[280px] md:max-w-[360px] h-auto drop-shadow-2xl"
               style={{ filter: 'drop-shadow(0 20px 40px rgba(30, 80, 71, 0.4))' }}
