@@ -3,36 +3,38 @@ import { Shield, CreditCard } from "lucide-react";
 
 const InvestmentSection = () => {
   return (
-    <section className="py-8 md:py-16 bg-primary text-primary-foreground">
-      <div className="container mx-auto px-3 md:px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-heading text-2xl md:text-4xl font-bold mb-6 md:mb-12">
-            Garanta agora seu acesso ao curso Master Molde
+    <section className="py-10 md:py-20 bg-card">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-center mb-10 text-foreground">
+            Comece hoje por um valor especial
           </h2>
           
-          <div className="bg-primary-foreground text-foreground p-6 md:p-12 rounded-xl md:rounded-2xl shadow-2xl mb-6 md:mb-8">
-            <p className="text-xs md:text-sm font-body text-muted-foreground mb-4">
-              Esse valor será válido para as 100 primeiras alunas, depois o valor será R$ 297
+          <div className="bg-muted border border-border p-6 md:p-10 rounded-3xl shadow-xl mb-6">
+            <p className="text-[10px] md:text-xs font-body text-muted-foreground text-center mb-6 uppercase tracking-wider">
+              Para as 100 primeiras alunas
             </p>
             
-            <div className="mb-6 md:mb-8">
-              <div className="inline-block">
-                <p className="text-5xl md:text-8xl font-heading font-extrabold text-primary mb-2">
+            <div className="mb-8">
+              <div className="text-center">
+                <p className="text-6xl md:text-8xl font-heading font-bold text-foreground mb-3 leading-none">
                   R$ 197
                 </p>
-                <p className="text-base md:text-lg font-body text-muted-foreground">
+                <p className="text-sm md:text-base font-body text-muted-foreground">
                   Pagamento único
                 </p>
               </div>
             </div>
 
-            <a href="https://pay.hotmart.com/J101764168H" target="_blank" rel="noopener noreferrer">
-              <Button variant="cta" size="lg" className="w-full md:w-auto mb-4 md:mb-6 text-base md:text-lg">
-                Quero garantir minha vaga por R$ 197,00
-              </Button>
-            </a>
+            <div className="max-w-md mx-auto mb-6">
+              <a href="https://pay.hotmart.com/J101764168H" target="_blank" rel="noopener noreferrer">
+                <Button variant="cta" size="lg" className="w-full text-sm md:text-base px-6 py-6 md:py-7">
+                  Quero garantir minha vaga por R$ 197
+                </Button>
+              </a>
+            </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-xs md:text-sm text-muted-foreground">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-xs md:text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Shield className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                 <span>Garantia de 7 dias</span>
@@ -44,8 +46,8 @@ const InvestmentSection = () => {
             </div>
           </div>
 
-          <p className="font-body text-xs md:text-sm opacity-90 px-2">
-            Pagamento único e acesso imediato. Garantia de 7 dias — se não amar o curso, devolvemos seu dinheiro.
+          <p className="font-body text-xs md:text-sm text-center text-muted-foreground">
+            Pagamento único e acesso imediato. Garantia de 7 dias.
           </p>
         </div>
       </div>

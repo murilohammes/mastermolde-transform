@@ -32,37 +32,40 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-8 md:py-16 bg-background">
-      <div className="container mx-auto px-3 md:px-4">
+    <section className="py-10 md:py-20 bg-background">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-heading text-2xl md:text-4xl font-bold text-center mb-6 md:mb-12 text-foreground">
+          <h2 className="font-heading text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-center mb-8 md:mb-12 text-foreground">
             Perguntas Frequentes
           </h2>
           
-          <Accordion type="single" collapsible className="space-y-3 md:space-y-4 mb-8 md:mb-12">
+          <Accordion type="single" collapsible className="space-y-3 mb-10">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-secondary border border-border rounded-lg px-4 md:px-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-card border border-border rounded-2xl px-5 md:px-6 hover:border-primary/30 transition-all"
               >
-                <AccordionTrigger className="font-heading font-semibold text-sm md:text-lg text-left hover:no-underline py-4 md:py-6">
+                <AccordionTrigger className="font-body font-semibold text-xs md:text-base text-left hover:no-underline py-4 md:py-5 text-foreground">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="font-body text-xs md:text-base text-muted-foreground pb-4 md:pb-6">
+                <AccordionContent className="font-body text-xs md:text-sm text-muted-foreground pb-4 md:pb-5 leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
 
-          <div className="text-center bg-secondary p-6 md:p-8 rounded-xl shadow-md">
-            <p className="font-body text-base md:text-lg mb-4 md:mb-6 text-foreground">
+          <div className="text-center bg-card border border-border p-6 md:p-8 rounded-3xl shadow-md">
+            <p className="font-body text-sm md:text-base mb-1 text-foreground">
               Ainda com dúvidas? Fale com a Julia pelo WhatsApp.
             </p>
+            <p className="font-body text-xs text-muted-foreground mb-5">
+              Tempo médio de resposta: 1–3h úteis.
+            </p>
             <a href="https://wa.me/5553997105666" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="default" className="gap-2 w-full md:w-auto">
-                <MessageCircle className="w-4 h-4 md:w-5 md:h-5" />
+              <Button variant="outline" size="default" className="gap-2 w-full md:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <MessageCircle className="w-4 h-4" />
                 Falar no WhatsApp
               </Button>
             </a>

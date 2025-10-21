@@ -1,27 +1,30 @@
 const PainSection = () => {
   return (
-    <section className="py-8 md:py-16 bg-secondary">
-      <div className="container mx-auto px-3 md:px-4">
+    <section className="py-10 md:py-20 bg-card">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-heading text-2xl md:text-4xl font-bold text-center mb-6 text-foreground leading-tight">
-            Você quer aprender, mas sente que tudo parece complicado?
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
-            <div className="space-y-4 order-2 md:order-1">
-              <p className="font-body text-sm md:text-lg text-foreground/90 leading-relaxed">
-                Talvez você já tenha tentado aprender sozinha, assistido vídeos ou até comprado algum curso... mas tudo parecia difícil, confuso, caro ou demorado demais.
-              </p>
-              
-              <p className="font-body text-sm md:text-lg text-foreground/90 leading-relaxed">
-                O Master Molde foi criado justamente para mudar isso. Ele te mostra o passo a passo real — simples, direto e possível — para transformar sua paixão por unhas em uma profissão rentável.
-              </p>
-            </div>
+          <div className="bg-muted border border-border rounded-3xl p-6 md:p-10 shadow-lg mb-8">
+            <h2 className="font-heading text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-center mb-4 text-foreground">
+              Você quer aprender, mas sente que tudo parece complicado?
+            </h2>
             
-            <div className="rounded-xl md:rounded-2xl overflow-hidden shadow-xl order-1 md:order-2">
+            <p className="font-body text-sm md:text-base text-center text-muted-foreground mb-0 max-w-3xl mx-auto leading-relaxed">
+              Talvez você já tenha tentado aprender sozinha, assistido vídeos ou até comprado algum curso... mas tudo parecia <em className="italic not-italic">difícil</em>, confuso, caro ou demorado demais. O Master Molde foi criado justamente para mudar isso.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+            <div className="rounded-2xl overflow-hidden shadow-md border border-border">
               <img 
                 src="https://i.imgur.com/D7sF1SH.png" 
-                alt="Antes e depois - transformação de unhas"
+                alt="Unhas antes do curso"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-md border border-border">
+              <img 
+                src="https://i.imgur.com/D7sF1SH.png" 
+                alt="Unhas depois do curso"
                 className="w-full h-auto"
               />
             </div>

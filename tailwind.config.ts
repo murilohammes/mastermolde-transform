@@ -14,8 +14,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        'heading': ['Montserrat', 'sans-serif'],
-        'body': ['Open Sans', 'sans-serif'],
+        'heading': ['Playfair Display', 'Cormorant Garamond', 'serif'],
+        'body': ['Inter', 'Open Sans', 'sans-serif'],
+      },
+      letterSpacing: {
+        'button': '0.02em',
       },
       colors: {
         border: "hsl(var(--border))",
@@ -26,6 +29,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
