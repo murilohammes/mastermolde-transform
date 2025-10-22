@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import CustomVideoPlayer from "@/components/CustomVideoPlayer";
 
 const Hero = () => {
   return (
@@ -28,15 +29,10 @@ const Hero = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mb-6">
-          <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border border-border">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/wG2CHKk8G8E"
-              title="Vídeo de Vendas - Master Molde"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+          <CustomVideoPlayer 
+            videoId="wG2CHKk8G8E"
+            title="Vídeo de Vendas - Master Molde"
+          />
         </div>
 
         <div className="max-w-md mx-auto text-center space-y-3">

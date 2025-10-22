@@ -13,18 +13,11 @@ const PainSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-            <div className="rounded-2xl overflow-hidden shadow-md border border-border">
+          <div className="flex justify-center">
+            <div className="rounded-2xl overflow-hidden shadow-md border border-border max-w-3xl">
               <img 
                 src="https://i.imgur.com/D7sF1SH.png" 
-                alt="Unhas antes do curso"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-md border border-border">
-              <img 
-                src="https://i.imgur.com/D7sF1SH.png" 
-                alt="Unhas depois do curso"
+                alt="Transformação de unhas - antes e depois do curso"
                 className="w-full h-auto"
               />
             </div>
