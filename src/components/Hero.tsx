@@ -19,7 +19,7 @@ const Hero = () => {
 
           <div className="order-1 md:order-2 flex justify-center">
             <img 
-              src="https://i.imgur.com/xbf6XeF.png" 
+              src="https://i.imgur.com/aDd4a85.png" 
               alt="Julia Mello"
               className="w-full max-w-[280px] md:max-w-[360px] h-auto drop-shadow-2xl"
               style={{ filter: 'drop-shadow(0 20px 40px rgba(30, 80, 71, 0.4))' }}
@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border border-border">
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/BHqWph3kTKM"
+              src="https://www.youtube.com/embed/wG2CHKk8G8E"
               title="Vídeo de Vendas - Master Molde"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
